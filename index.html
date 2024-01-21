@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    
+    <!-- Ваш JavaScript код для определения устройства Android -->
+    <script type="text/javascript">
+        var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+        
+        if (isAndroid) {
+            // Ваш код для обработки случая, когда пользователь заходит с Android
+            console.log("Пользователь использует устройство на базе Android.");
+            window.location.href = "https://tapllnk.web.app/";
+        } else {
+            // Ваш код для обработки случая, когда пользователь заходит с другого устройства
+            console.log("Пользователь использует устройство, отличное от Android.");
+        }
+    </script>
+    <!-- Конец JavaScript кода -->
+    
+</head>
+<body>
+    <!-- Остальное содержимое вашей веб-страницы -->
+    <h1>Hello, World!</h1>
+</body>
+</html>
